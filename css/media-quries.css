@@ -1,0 +1,125 @@
+/*min widths*/
+
+@media (min-width:576px) {
+    .search-icon {
+        position: absolute;
+        width: 45px;
+        right: 45px;
+        top: 0;
+        bottom: 0;
+        background-color: #FF4A52;
+    }
+
+    .search-icon a {
+        color: #ffffff !important;
+    }
+
+    .drop-down-menu {
+        position: absolute;
+        width: 45px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1ec6b6;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+
+    }
+}
+
+@media (min-width:768px) {}
+
+@media (min-width:992px) {
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    .drop-down-menu {
+        display: none !important;
+    }
+}
+
+@media (min-width:1200px) {
+    .search-icon {
+        width: 100px;
+    }
+
+    .search-bar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .search-form {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+/*max widths*/
+@media (max-width:992px) {
+    nav ul {
+        position: absolute;
+        background-color: #ffffff;
+        top: 92px;
+        right: 0;
+        width: 100%;
+        padding: 0 14.5%;
+        border-top: 2px solid;
+    }
+
+    nav ul li {
+        padding-bottom: 10px;
+    }
+
+    nav ul li:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .form-search {
+        right: 90px;
+        width: 88%;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+    }
+
+    .mail-form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:772px) {
+    .form-search {
+        width: 80%;
+    }
+}
+
+@media (max-width:576px) {
+    .form-search {
+        width: 80%;
+        right: 90px;
+        border-radius: 6px 6px 6px 6px;
+    }
+}
+@media (max-width:500px) {
+    .popular-title {
+        font-size: 25px;
+
+    }
+}

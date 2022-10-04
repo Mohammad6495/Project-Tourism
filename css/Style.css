@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    transition: color .2s;
+}
+
+a:hover {
+    color: #ff4a52;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+li:hover {
+    color: #ff4a52;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+header {
+    background-color: #ffffff;
+    justify-content: space-around;
+    padding: 25px 0;
+    position: relative;
+}
+
+nav ul {
+    display: none;
+}
+
+nav li {
+    margin-right: 35px;
+    font-size: 1.2em;
+    margin-top: 13px;
+}
+
+.search-icon {
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon a {
+    color: #000000;
+    font-weight: 400;
+
+}
+
+.drop-down-menu a {
+    color: #000000;
+}
+
+.show {
+
+    display: inline-block !important;
+}
+
+.slider {
+    background-image: url("../images/banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider-text {
+    justify-content: space-around;
+    height: 45vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider-text h3 {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 8vw;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 10vw;
+}
+
+.slider-text p {
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.slider-btn {
+    background-color: #1ec6b6;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1.7vw;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    padding: 1vw 1.5vw;
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: #ff4a52;
+    color: #ffffff !important;
+}
+
+.form-search {
+    position: absolute;
+    right: 145px;
+    top: 13px;
+    z-index: 200;
+    width: 85%;
+    display: none;
+}
+
+
+
+.form-search form input[type="text"] {
+    padding: 25px 10px;
+    background-color: #ff4a52;
+    border: none;
+    width: 100%;
+    transition: display 0.5s;
+    border-radius: 6px 0px 0px 6px;
+    color: #ffffff;
+    outline: 0;
+}
+
+.search-bar {
+    background-color: #040E27;
+    flex-direction: column;
+    padding: 20px 25px;
+    align-items: center;
+}
+
+.search-bar h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.search-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.search-form input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #363E52;
+    padding: 17px 50px;
+    margin: 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    outline: 0;
+}
+
+.search-bar-btn {
+    background-color: #ff4a52;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    color: #ffffff;
+    margin: 10px;
+    cursor: pointer;
+    padding: 15px 35px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.search-bar-btn:hover {
+    background-color: #1ec6b6;
+}
+
+.popular-heading {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    align-items: center;
+}
+
+.popular-title {
+    font-size: 38px;
+    font-weight: 400;
+    color: #040E27;
+    margin: 10px;
+}
+
+
+.popular-description {
+    font-size: 16px;
+    color: #7A838B;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.popular-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.popular-container article {
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.popular-container article:hover {
+    transform: translateY(-10px);
+}
+
+.popular-container article:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+    content: '';
+    width: 100%;
+    height: 99%;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.popular-image-info {
+    position: absolute;
+    z-index: 100000;
+    bottom: 30px;
+    left: 30PX;
+}
+
+.popular-image-info p {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.popular-image-info p a {
+    background-color: #1ec6b6;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.popular-container article:hover .popular-image-info a {
+    color: #fff;
+    background-color: #FF4A52;
+    transition: 0.3s;
+}
+
+.popular-container article:hover .popular-image-info p {
+    color: #FF4A52;
+}
+
+.newsletter {
+    background-image: url("../images/newsletter.png");
+    background-position: 65% 65%;
+    background-size: cover;
+    position: relative;
+    margin-top: 10px;
+    height: 250px;
+}
+
+.newsletter:before {
+    position: absolute;
+    content: '';
+    background-color: #040E27;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+.newsletter-container {
+    z-index: 10000;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.newsletter-text {
+    z-index: 100;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.newsletter-text h4 {
+    line-height: 45px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.newsletter-text p {
+    color: #AAB1B7;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.mail-form input {
+    width: 40vw;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    outline: 0;
+}
+
+.mail-btn {
+    background-color: #FF4A52;
+    border: none;
+    padding: 15px 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.mail-btn:hover {
+    background-color: #1ec6b6;
+}
+
+.video {
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/video.png");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 130px 0;
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+}
+
+.video:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #040E27;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    z-index: 1;
+}
+
+.video-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.video-container h3 {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.button-video {
+    background-color: #1ec6b6;
+    width: 85px;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.button-video:hover {
+    background-color: #FF4A52;
+}
+
+.button-video a {
+    color: #ffffff;
+}
+
+footer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #040E27;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.footer-left {
+    margin-bottom: 20px;
+}
+
+.footer-info li {
+    color: #AAB1B7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.link li {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.link li a {
+    color: #AAB1B7;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+}
+
+.footer-right h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+}
